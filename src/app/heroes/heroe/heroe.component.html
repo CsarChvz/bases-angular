@@ -1,0 +1,19 @@
+<h1>{{ nombre }}</h1>
+<dl>
+  <td>Nombre</td>
+  <dd>{{ nombre }}</dd>
+
+  <td>Edad</td>
+  <dd>{{ edad }}</dd>
+
+  <td>Funcion</td>
+  <dd>{{ obtenerNombre() }}</dd>
+
+  <td>Capitalizado</td>
+  <dd>{{ nombreCapitalizado }}</dd>
+</dl>
+<!-- Una vez clickeado este metodo, cambia en todos los lugares en los que se esta consumiendo -->
+
+<!-- Solo tiene que cambiar lo que tiene que cambiar -->
+<button (click)="cambiarNombre()">cambiar heroe</button>
+<button (click)="cambiarEdad()">cambiar edad</button>
